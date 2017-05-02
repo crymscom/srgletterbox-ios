@@ -310,37 +310,31 @@ static const UILayoutPriority LetterboxViewConstraintMorePriority = 950;
 
 - (IBAction)hideControls:(id)sender
 {
-    [[SRGAnalyticsTracker sharedTracker] trackHiddenEventWithTitle:@"HIDE_CONTROLS"];
     [self.letterboxView setUserInterfaceHidden:YES animated:YES togglable:YES];
 }
 
 - (IBAction)showControls:(id)sender
 {
-    [[SRGAnalyticsTracker sharedTracker] trackHiddenEventWithTitle:@"SHOW_CONTROLS"];
     [self.letterboxView setUserInterfaceHidden:NO animated:YES togglable:YES];
 }
 
 - (IBAction)forceHideControls:(id)sender
 {
-    [[SRGAnalyticsTracker sharedTracker] trackHiddenEventWithTitle:@"FORCE_HIDE_CONTROLS"];
     [self.letterboxView setUserInterfaceHidden:YES animated:YES togglable:NO];
 }
 
 - (IBAction)forceShowControls:(id)sender
 {
-    [[SRGAnalyticsTracker sharedTracker] trackHiddenEventWithTitle:@"FORCE_SHOW_CONTROLS"];
     [self.letterboxView setUserInterfaceHidden:NO animated:YES togglable:NO];
 }
 
 - (IBAction)fullScreen:(id)sender
 {
-    [[SRGAnalyticsTracker sharedTracker] trackHiddenEventWithTitle:@"TOGGLE_FULL_SCREEN"];
     [self.letterboxView setFullScreen:YES animated:YES];
 }
 
 - (IBAction)toggleAlwaysHideTimeline:(UISwitch *)sender
 {
-    [[SRGAnalyticsTracker sharedTracker] trackHiddenEventWithTitle:@"TOGGLE_ALWAYS_HIDE" customLabels:@{ @"ENABLED" : @(sender.on).stringValue }];
     [self.letterboxView setTimelineAlwaysHidden:sender.on animated:YES];
 }
 
