@@ -80,7 +80,7 @@
 
 - (NSString *)srg_pageViewTitle
 {
-    return [NSString stringWithFormat:@"SimplePlayer: %@", self.URN.URNString];
+    return [NSString stringWithFormat:@"Basic Player: %@", self.URN.URNString];
 }
 
 @end

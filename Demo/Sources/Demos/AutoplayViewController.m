@@ -88,7 +88,7 @@
 
 - (NSString *)srg_pageViewTitle
 {
-    return @"Autoplay player";
+    return @"Autoplay";
 }
 
 @end

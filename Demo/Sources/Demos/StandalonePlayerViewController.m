@@ -154,7 +154,7 @@
 
 - (NSString *)srg_pageViewTitle
 {
-    return [NSString stringWithFormat:@"StandalonePlayer: %@", self.URN.URNString];
+    return [NSString stringWithFormat:@"Standalone Player: %@", self.URN.URNString];
 }
 
 @end

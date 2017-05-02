@@ -399,7 +399,7 @@ static const UILayoutPriority LetterboxViewConstraintMorePriority = 950;
 
 - (NSString *)srg_pageViewTitle
 {
-    return [NSString stringWithFormat:@"ModalPlayer: %@", self.URN.URNString];
+    return [NSString stringWithFormat:@"Advanced Player: %@", self.URN.URNString];
 }
 
 @end

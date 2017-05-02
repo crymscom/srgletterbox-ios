@@ -234,7 +234,7 @@
 
 - (NSString *)srg_pageViewTitle
 {
-    return [NSString stringWithFormat:@"MultiPlayer: %@, %@, %@", self.URN.URNString, self.URN1.URNString, self.URN2.URNString];
+    return [NSString stringWithFormat:@"Multiple Player: %@, %@, %@", self.URN.URNString, self.URN1.URNString, self.URN2.URNString];
 }
 
 @end
