@@ -4,12 +4,13 @@
 //  License information is available from the LICENSE file.
 //
 
+#import <SRGAnalytics/SRGAnalytics.h>
 #import <SRGLetterbox/SRGLetterbox.h>
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MultiPlayerViewController : UIViewController <SRGLetterboxPictureInPictureDelegate, SRGLetterboxViewDelegate>
+@interface MultiPlayerViewController : UIViewController <SRGLetterboxPictureInPictureDelegate, SRGLetterboxViewDelegate, SRGAnalyticsViewTracking>
 
 - (instancetype)initWithURN:(nullable SRGMediaURN *)URN URN1:(nullable SRGMediaURN *)URN1 URN2:(nullable SRGMediaURN *)URN2 userInterfaceAlwaysHidden:(BOOL)userInterfaceAlwaysHidden;
 

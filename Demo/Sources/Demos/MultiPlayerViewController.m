@@ -230,4 +230,11 @@
     [self.smallLetterboxController2 play];
 }
 
+#pragma mark SRGAnalyticsViewTracking protocol
+
+- (NSString *)srg_pageViewTitle
+{
+    return [NSString stringWithFormat:@"MultiPlayer: %@, %@, %@", self.URN.URNString, self.URN1.URNString, self.URN2.URNString];
+}
+
 @end
