@@ -38,10 +38,19 @@
 		6F0AD07B1E5EAB1A000A61A5 /* AutoplayViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F0AD07A1E5EAB1A000A61A5 /* AutoplayViewController.storyboard */; };
 		6F0AD07E1E5EB224000A61A5 /* AutoplayTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0AD07D1E5EB224000A61A5 /* AutoplayTableViewCell.m */; };
 		6F131A7D1E8CCDDB000D6BEC /* SRGAppearance.framework in Copy Framework Dependencies For Xcode View Rendering */ = {isa = PBXBuildFile; fileRef = 6FE08CE11E8B80EB00EC4716 /* SRGAppearance.framework */; };
+		6F13D8A91EB8C66A00D264DC /* TCCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F13D8A71EB8C66A00D264DC /* TCCore.framework */; };
+		6F13D8AA1EB8C66A00D264DC /* TCSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F13D8A81EB8C66A00D264DC /* TCSDK.framework */; };
+		6F13D8AB1EB8C67100D264DC /* TCCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F13D8A71EB8C66A00D264DC /* TCCore.framework */; };
+		6F13D8AC1EB8C67100D264DC /* TCCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6F13D8A71EB8C66A00D264DC /* TCCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6F13D8AD1EB8C67100D264DC /* TCSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F13D8A81EB8C66A00D264DC /* TCSDK.framework */; };
+		6F13D8AE1EB8C67100D264DC /* TCSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6F13D8A81EB8C66A00D264DC /* TCSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6F13D8AF1EB8C6A600D264DC /* TCCore.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6F13D8A71EB8C66A00D264DC /* TCCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6F13D8B01EB8C6A600D264DC /* TCSDK.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6F13D8A81EB8C66A00D264DC /* TCSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6F13D8B11EB8C6C500D264DC /* TCCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F13D8A71EB8C66A00D264DC /* TCCore.framework */; };
+		6F13D8B21EB8C6C500D264DC /* TCSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F13D8A81EB8C66A00D264DC /* TCSDK.framework */; };
 		6F1F5FC41E309BE4000215F3 /* ModalPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F1F5FC31E309BE4000215F3 /* ModalPlayerViewController.m */; };
 		6F1F5FC61E309BF0000215F3 /* ModalPlayerViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F1F5FC51E309BF0000215F3 /* ModalPlayerViewController.storyboard */; };
 		6F1F5FDE1E30A6D1000215F3 /* Masonry.framework in Copy Framework Dependencies For Xcode View Rendering */ = {isa = PBXBuildFile; fileRef = 08FA0CA81E2E325F000C94EF /* Masonry.framework */; };
-		6F1F5FDF1E30A6D1000215F3 /* ComScore.framework in Copy Framework Dependencies For Xcode View Rendering */ = {isa = PBXBuildFile; fileRef = 6FAB3B071E28FB1400CC2197 /* ComScore.framework */; };
 		6F1F5FE01E30A6D1000215F3 /* libextobjc.framework in Copy Framework Dependencies For Xcode View Rendering */ = {isa = PBXBuildFile; fileRef = 6FAB3B081E28FB1400CC2197 /* libextobjc.framework */; };
 		6F1F5FE11E30A6D1000215F3 /* Mantle.framework in Copy Framework Dependencies For Xcode View Rendering */ = {isa = PBXBuildFile; fileRef = 6FAB3B091E28FB1400CC2197 /* Mantle.framework */; };
 		6F1F5FE21E30A6D1000215F3 /* SRGAnalytics_DataProvider.framework in Copy Framework Dependencies For Xcode View Rendering */ = {isa = PBXBuildFile; fileRef = 6FAB3B0A1E28FB1400CC2197 /* SRGAnalytics_DataProvider.framework */; };
@@ -62,7 +71,6 @@
 		6FAB3B021E28F77E00CC2197 /* SRGLetterboxView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FAB3B001E28F77E00CC2197 /* SRGLetterboxView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6FAB3B031E28F77E00CC2197 /* SRGLetterboxView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FAB3B011E28F77E00CC2197 /* SRGLetterboxView.m */; };
 		6FAB3B051E28F7FE00CC2197 /* SRGLetterbox.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FAB3B041E28F7FE00CC2197 /* SRGLetterbox.m */; };
-		6FAB3B101E28FB1400CC2197 /* ComScore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FAB3B071E28FB1400CC2197 /* ComScore.framework */; };
 		6FAB3B111E28FB1400CC2197 /* libextobjc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FAB3B081E28FB1400CC2197 /* libextobjc.framework */; };
 		6FAB3B121E28FB1400CC2197 /* Mantle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FAB3B091E28FB1400CC2197 /* Mantle.framework */; };
 		6FAB3B131E28FB1400CC2197 /* SRGAnalytics_DataProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FAB3B0A1E28FB1400CC2197 /* SRGAnalytics_DataProvider.framework */; };
@@ -78,8 +86,6 @@
 		6FAB3B631E2900D200CC2197 /* SimplePlayerViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FAB3B621E2900D200CC2197 /* SimplePlayerViewController.storyboard */; };
 		6FAB3B641E2905B400CC2197 /* SRGLetterbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FE321411E28E24E00FD8E42 /* SRGLetterbox.framework */; };
 		6FAB3B651E2905B400CC2197 /* SRGLetterbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6FE321411E28E24E00FD8E42 /* SRGLetterbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		6FAB3B691E2905CA00CC2197 /* ComScore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FAB3B071E28FB1400CC2197 /* ComScore.framework */; };
-		6FAB3B6A1E2905CA00CC2197 /* ComScore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6FAB3B071E28FB1400CC2197 /* ComScore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6FAB3B6B1E2905CA00CC2197 /* libextobjc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FAB3B081E28FB1400CC2197 /* libextobjc.framework */; };
 		6FAB3B6C1E2905CA00CC2197 /* libextobjc.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6FAB3B081E28FB1400CC2197 /* libextobjc.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6FAB3B6D1E2905CA00CC2197 /* Mantle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FAB3B091E28FB1400CC2197 /* Mantle.framework */; };
@@ -98,7 +104,6 @@
 		6FAB3B7A1E2905CA00CC2197 /* SRGMediaPlayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6FAB3B0F1E28FB1400CC2197 /* SRGMediaPlayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6FAB3B841E29060200CC2197 /* SRGLetterbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FE321411E28E24E00FD8E42 /* SRGLetterbox.framework */; };
 		6FAB3B8F1E29066300CC2197 /* LetterboxControllerTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FAB3B8D1E29066300CC2197 /* LetterboxControllerTestCase.m */; };
-		6FAB3B911E29080F00CC2197 /* ComScore.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6FAB3B071E28FB1400CC2197 /* ComScore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6FAB3B921E29080F00CC2197 /* libextobjc.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6FAB3B081E28FB1400CC2197 /* libextobjc.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6FAB3B931E29080F00CC2197 /* Mantle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6FAB3B091E28FB1400CC2197 /* Mantle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6FAB3B941E29080F00CC2197 /* SRGAnalytics_DataProvider.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6FAB3B0A1E28FB1400CC2197 /* SRGAnalytics_DataProvider.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -139,7 +144,6 @@
 		6FE08CE91E8B81B000EC4716 /* UIFont+SRGLetterbox.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FE08CE71E8B81B000EC4716 /* UIFont+SRGLetterbox.h */; };
 		6FE08CEA1E8B81B000EC4716 /* UIFont+SRGLetterbox.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE08CE81E8B81B000EC4716 /* UIFont+SRGLetterbox.m */; };
 		6FE08CEC1E8B845F00EC4716 /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6FE08CEB1E8B845F00EC4716 /* FontAwesome.otf */; };
-		6FE655D21E2CA3F9000033D4 /* ComScore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FAB3B071E28FB1400CC2197 /* ComScore.framework */; };
 		6FE655D31E2CA3F9000033D4 /* libextobjc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FAB3B081E28FB1400CC2197 /* libextobjc.framework */; };
 		6FE655D41E2CA3F9000033D4 /* Mantle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FAB3B091E28FB1400CC2197 /* Mantle.framework */; };
 		6FE655D51E2CA3F9000033D4 /* SRGAnalytics_DataProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FAB3B0A1E28FB1400CC2197 /* SRGAnalytics_DataProvider.framework */; };
@@ -193,7 +197,6 @@
 				6FB97FFA1E4B28940014C4C2 /* MAKVONotificationCenter.framework in Copy Framework Dependencies For Xcode View Rendering */,
 				08FA0D211E30F84F000C94EF /* FXReachability.framework in Copy Framework Dependencies For Xcode View Rendering */,
 				6F1F5FDE1E30A6D1000215F3 /* Masonry.framework in Copy Framework Dependencies For Xcode View Rendering */,
-				6F1F5FDF1E30A6D1000215F3 /* ComScore.framework in Copy Framework Dependencies For Xcode View Rendering */,
 				6F1F5FE01E30A6D1000215F3 /* libextobjc.framework in Copy Framework Dependencies For Xcode View Rendering */,
 				6F1F5FE11E30A6D1000215F3 /* Mantle.framework in Copy Framework Dependencies For Xcode View Rendering */,
 				6F1F5FE21E30A6D1000215F3 /* SRGAnalytics_DataProvider.framework in Copy Framework Dependencies For Xcode View Rendering */,
@@ -222,12 +225,13 @@
 				6FAB3B741E2905CA00CC2197 /* SRGAnalytics.framework in Embed Frameworks */,
 				6FAB3B6E1E2905CA00CC2197 /* Mantle.framework in Embed Frameworks */,
 				6FAB3B7A1E2905CA00CC2197 /* SRGMediaPlayer.framework in Embed Frameworks */,
+				6F13D8AE1EB8C67100D264DC /* TCSDK.framework in Embed Frameworks */,
 				6FAB3B9D1E291A9700CC2197 /* YYWebImage.framework in Embed Frameworks */,
 				6FAB3B701E2905CA00CC2197 /* SRGAnalytics_DataProvider.framework in Embed Frameworks */,
 				6FAB3B6C1E2905CA00CC2197 /* libextobjc.framework in Embed Frameworks */,
+				6F13D8AC1EB8C67100D264DC /* TCCore.framework in Embed Frameworks */,
 				08FA0D251E30F954000C94EF /* FXReachability.framework in Embed Frameworks */,
 				6FAB3B761E2905CA00CC2197 /* SRGDataProvider.framework in Embed Frameworks */,
-				6FAB3B6A1E2905CA00CC2197 /* ComScore.framework in Embed Frameworks */,
 				6FE08CE41E8B80F200EC4716 /* SRGAppearance.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -239,12 +243,13 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				6F13D8AF1EB8C6A600D264DC /* TCCore.framework in CopyFiles */,
+				6F13D8B01EB8C6A600D264DC /* TCSDK.framework in CopyFiles */,
 				6FE08CE61E8B811500EC4716 /* SRGAppearance.framework in CopyFiles */,
 				6FB97FF71E4B09DF0014C4C2 /* MAKVONotificationCenter.framework in CopyFiles */,
 				6FD9BA221E2FB2220013CC97 /* Masonry.framework in CopyFiles */,
 				6FE655DC1E2CA453000033D4 /* SRGLetterbox.framework in CopyFiles */,
 				6FAB3B9E1E291A9E00CC2197 /* YYWebImage.framework in CopyFiles */,
-				6FAB3B911E29080F00CC2197 /* ComScore.framework in CopyFiles */,
 				6FAB3B921E29080F00CC2197 /* libextobjc.framework in CopyFiles */,
 				6FAB3B931E29080F00CC2197 /* Mantle.framework in CopyFiles */,
 				6FAB3B941E29080F00CC2197 /* SRGAnalytics_DataProvider.framework in CopyFiles */,
@@ -291,6 +296,8 @@
 		6F0AD07A1E5EAB1A000A61A5 /* AutoplayViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AutoplayViewController.storyboard; sourceTree = "<group>"; };
 		6F0AD07C1E5EB224000A61A5 /* AutoplayTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoplayTableViewCell.h; sourceTree = "<group>"; };
 		6F0AD07D1E5EB224000A61A5 /* AutoplayTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoplayTableViewCell.m; sourceTree = "<group>"; };
+		6F13D8A71EB8C66A00D264DC /* TCCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TCCore.framework; path = Carthage/Build/iOS/TCCore.framework; sourceTree = "<group>"; };
+		6F13D8A81EB8C66A00D264DC /* TCSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TCSDK.framework; path = Carthage/Build/iOS/TCSDK.framework; sourceTree = "<group>"; };
 		6F1F5FC21E309BE4000215F3 /* ModalPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalPlayerViewController.h; sourceTree = "<group>"; };
 		6F1F5FC31E309BE4000215F3 /* ModalPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalPlayerViewController.m; sourceTree = "<group>"; };
 		6F1F5FC51E309BF0000215F3 /* ModalPlayerViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ModalPlayerViewController.storyboard; sourceTree = "<group>"; };
@@ -309,7 +316,6 @@
 		6FAB3B001E28F77E00CC2197 /* SRGLetterboxView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRGLetterboxView.h; sourceTree = "<group>"; };
 		6FAB3B011E28F77E00CC2197 /* SRGLetterboxView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRGLetterboxView.m; sourceTree = "<group>"; };
 		6FAB3B041E28F7FE00CC2197 /* SRGLetterbox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRGLetterbox.m; sourceTree = "<group>"; };
-		6FAB3B071E28FB1400CC2197 /* ComScore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ComScore.framework; path = Carthage/Build/iOS/ComScore.framework; sourceTree = "<group>"; };
 		6FAB3B081E28FB1400CC2197 /* libextobjc.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libextobjc.framework; path = Carthage/Build/iOS/libextobjc.framework; sourceTree = "<group>"; };
 		6FAB3B091E28FB1400CC2197 /* Mantle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mantle.framework; path = Carthage/Build/iOS/Mantle.framework; sourceTree = "<group>"; };
 		6FAB3B0A1E28FB1400CC2197 /* SRGAnalytics_DataProvider.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SRGAnalytics_DataProvider.framework; path = Carthage/Build/iOS/SRGAnalytics_DataProvider.framework; sourceTree = "<group>"; };
@@ -381,13 +387,14 @@
 				6FAB3B6D1E2905CA00CC2197 /* Mantle.framework in Frameworks */,
 				6FAB3B791E2905CA00CC2197 /* SRGMediaPlayer.framework in Frameworks */,
 				6FAB3B9C1E291A9700CC2197 /* YYWebImage.framework in Frameworks */,
+				6F13D8AD1EB8C67100D264DC /* TCSDK.framework in Frameworks */,
 				6FAB3B6F1E2905CA00CC2197 /* SRGAnalytics_DataProvider.framework in Frameworks */,
 				6FB97FF41E4B09BD0014C4C2 /* MAKVONotificationCenter.framework in Frameworks */,
 				08FA0D241E30F954000C94EF /* FXReachability.framework in Frameworks */,
+				6F13D8AB1EB8C67100D264DC /* TCCore.framework in Frameworks */,
 				6FAB3B6B1E2905CA00CC2197 /* libextobjc.framework in Frameworks */,
 				6FAB3B751E2905CA00CC2197 /* SRGDataProvider.framework in Frameworks */,
 				6FE08CE31E8B80F200EC4716 /* SRGAppearance.framework in Frameworks */,
-				6FAB3B691E2905CA00CC2197 /* ComScore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,10 +402,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F13D8B11EB8C6C500D264DC /* TCCore.framework in Frameworks */,
+				6F13D8B21EB8C6C500D264DC /* TCSDK.framework in Frameworks */,
 				6FE08CE51E8B810D00EC4716 /* SRGAppearance.framework in Frameworks */,
 				6FB97FF61E4B09D70014C4C2 /* MAKVONotificationCenter.framework in Frameworks */,
 				6FD9BA211E2FB2190013CC97 /* Masonry.framework in Frameworks */,
-				6FE655D21E2CA3F9000033D4 /* ComScore.framework in Frameworks */,
 				6FE655D31E2CA3F9000033D4 /* libextobjc.framework in Frameworks */,
 				6FE655D41E2CA3F9000033D4 /* Mantle.framework in Frameworks */,
 				6FE655D51E2CA3F9000033D4 /* SRGAnalytics_DataProvider.framework in Frameworks */,
@@ -417,12 +425,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F13D8A91EB8C66A00D264DC /* TCCore.framework in Frameworks */,
+				6F13D8AA1EB8C66A00D264DC /* TCSDK.framework in Frameworks */,
 				6FE08CE21E8B80EB00EC4716 /* SRGAppearance.framework in Frameworks */,
 				6FB97FF31E4B09B70014C4C2 /* MAKVONotificationCenter.framework in Frameworks */,
 				08FA0CDC1E2E8CCC000C94EF /* CoreText.framework in Frameworks */,
 				08FA0CA91E2E325F000C94EF /* Masonry.framework in Frameworks */,
 				6FAB3B9B1E291A8500CC2197 /* YYWebImage.framework in Frameworks */,
-				6FAB3B101E28FB1400CC2197 /* ComScore.framework in Frameworks */,
 				6FAB3B111E28FB1400CC2197 /* libextobjc.framework in Frameworks */,
 				6FAB3B121E28FB1400CC2197 /* Mantle.framework in Frameworks */,
 				6FAB3B131E28FB1400CC2197 /* SRGAnalytics_DataProvider.framework in Frameworks */,
@@ -546,7 +555,6 @@
 		6FAB3B061E28FB1400CC2197 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6FAB3B071E28FB1400CC2197 /* ComScore.framework */,
 				08FA0CDB1E2E8CCC000C94EF /* CoreText.framework */,
 				08FA0D1F1E30F820000C94EF /* FXReachability.framework */,
 				6FA562CD1E9BABE400A1344F /* HockeySDK.framework */,
@@ -561,6 +569,8 @@
 				6FAB3B0D1E28FB1400CC2197 /* SRGDataProvider.framework */,
 				6FAB3B0E1E28FB1400CC2197 /* SRGLogger.framework */,
 				6FAB3B0F1E28FB1400CC2197 /* SRGMediaPlayer.framework */,
+				6F13D8A71EB8C66A00D264DC /* TCCore.framework */,
+				6F13D8A81EB8C66A00D264DC /* TCSDK.framework */,
 				6FAB3B9A1E291A8500CC2197 /* YYWebImage.framework */,
 			);
 			name = Frameworks;
@@ -1010,6 +1020,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1182,6 +1193,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1237,6 +1249,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;

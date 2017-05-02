@@ -10,6 +10,7 @@
 
 #import <SRGAnalytics/SRGAnalytics.h>
 #import <HockeySDK/HockeySDK.h>
+#import <TCCore/TCCore.h>
 
 @implementation AppDelegate
 
@@ -27,8 +28,12 @@
     [[BITHockeyManager sharedHockeyManager].authenticator authenticateInstallation];
 #endif
     
+    [TCDebug setDebugLevel:TCLogLevel_Verbose];
+    [TCDebug setNotificationLog:YES];
+    
     [[SRGAnalyticsTracker sharedTracker] startWithBusinessUnitIdentifier:SRGAnalyticsBusinessUnitIdentifierTEST
-                                                     comScoreVirtualSite:@"app-test-v"
+                                                       accountIdentifier:3601
+                                                     containerIdentifier:2
                                                      netMetrixIdentifier:@"test"];
     
     DemosViewController *demosViewController = [[DemosViewController alloc] init];

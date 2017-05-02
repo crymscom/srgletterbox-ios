@@ -31,7 +31,6 @@ github "SRGSSR/srgletterbox-ios"
 
 Then run `carthage update --platform iOS` to update the dependencies. You will need to manually add the following `.framework`s generated in the `Carthage/Build/iOS` folder to your project:
 
-  * `ComScore`: The comScore framework
   * `FXReachability`: A reachability framework
   * `libextobjc`: A utility framework
   * `MAKVONotificationCenter`: A safe KVO framework
@@ -44,6 +43,8 @@ Then run `carthage update --platform iOS` to update the dependencies. You will n
   * `SRGLogger`: The framework used for internal logging
   * `SRGMediaPlayer`: The media player framework (if not already in your project)
   * `YYWebImage`: A framework for image retrieval
+  * `TCCore`: Core TagCommander framework.
+  * `TCSDK`: TagCommander SDK framework.
 
 For more information about Carthage and its use, refer to the [official documentation](https://github.com/Carthage/Carthage).
 
