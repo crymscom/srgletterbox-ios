@@ -4,13 +4,14 @@
 //  License information is available from the LICENSE file.
 //
 
+#import <SRGAnalytics/SRGAnalytics.h>
 #import <SRGDataProvider/SRGDataProvider.h>
 #import <SRGLetterbox/SRGLetterbox.h>
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ModalPlayerViewController : UIViewController <SRGLetterboxPictureInPictureDelegate, SRGLetterboxViewDelegate, UIGestureRecognizerDelegate, UIViewControllerTransitioningDelegate>
+@interface ModalPlayerViewController : UIViewController <SRGLetterboxPictureInPictureDelegate, SRGLetterboxViewDelegate, UIGestureRecognizerDelegate, UIViewControllerTransitioningDelegate, SRGAnalyticsViewTracking>
 
 - (instancetype)initWithURN:(nullable SRGMediaURN *)URN;
 

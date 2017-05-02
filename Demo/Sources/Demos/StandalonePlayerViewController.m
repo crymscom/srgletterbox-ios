@@ -150,4 +150,11 @@
     [SRGLetterboxService sharedService].mirroredOnExternalScreen = ! [SRGLetterboxService sharedService].mirroredOnExternalScreen;
 }
 
+#pragma mark SRGAnalyticsViewTracking protocol
+
+- (NSString *)srg_pageViewTitle
+{
+    return [NSString stringWithFormat:@"StandalonePlayer: %@", self.URN.URNString];
+}
+
 @end

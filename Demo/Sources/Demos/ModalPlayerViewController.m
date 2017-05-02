@@ -395,4 +395,11 @@ static const UILayoutPriority LetterboxViewConstraintMorePriority = 950;
     [self reloadDataOverriddenWithMedia:self.letterboxController.segmentMedia];
 }
 
+#pragma mark SRGAnalyticsViewTracking protocol
+
+- (NSString *)srg_pageViewTitle
+{
+    return [NSString stringWithFormat:@"ModalPlayer: %@", self.URN.URNString];
+}
+
 @end

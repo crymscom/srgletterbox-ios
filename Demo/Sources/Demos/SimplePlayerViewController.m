@@ -76,4 +76,11 @@
     } completion:nil];
 }
 
+#pragma mark SRGAnalyticsViewTracking protocol
+
+- (NSString *)srg_pageViewTitle
+{
+    return [NSString stringWithFormat:@"SimplePlayer: %@", self.URN.URNString];
+}
+
 @end
