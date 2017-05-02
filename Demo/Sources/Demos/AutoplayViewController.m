@@ -84,4 +84,11 @@
     return CGRectGetWidth(tableView.frame) * 9.f / 16.f;
 }
 
+#pragma mark SRGAnalyticsViewTracking protocol
+
+- (NSString *)srg_pageViewTitle
+{
+    return @"Autoplay player";
+}
+
 @end
