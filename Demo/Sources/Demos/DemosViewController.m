@@ -325,4 +325,11 @@
     }
 }
 
+#pragma mark SRGAnalyticsViewTracking protocol
+
+- (NSString *)srg_pageViewTitle
+{
+    return self.title;
+}
+
 @end
