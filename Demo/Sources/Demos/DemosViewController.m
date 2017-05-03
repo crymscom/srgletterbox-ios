@@ -35,7 +35,7 @@
     versionString = [@"🌙 " stringByAppendingString:versionString];
 #endif
     
-    return [NSString stringWithFormat:@"Letterbox %@ demos (build %@)", versionString, bundleVersion];
+    return [NSString stringWithFormat:@"Letterbox TC %@ demos (build %@)", versionString, bundleVersion];
 }
 
 #pragma mark Players
