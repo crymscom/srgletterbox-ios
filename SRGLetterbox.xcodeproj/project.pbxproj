@@ -1121,7 +1121,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				BUNDLE_IDENTIFIER_SUFFIX = "tag-commander";
+				BUNDLE_IDENTIFIER_SUFFIX = ".tag-commander";
 				CUSTOM_BUNDLE_NAME = "Letterbox TC";
 				DEVELOPMENT_TEAM = VMGRRW6SG7;
 				FRAMEWORK_SEARCH_PATHS = (
