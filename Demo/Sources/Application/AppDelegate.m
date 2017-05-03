@@ -23,7 +23,7 @@
     [self.window makeKeyAndVisible];
     
 #ifndef DEBUG
-    [[BITHockeyManager sharedHockeyManager] configureWithIdentifier:@"7bf489539f6e44739133ae456c41dc2c"];
+    [[BITHockeyManager sharedHockeyManager] configureWithIdentifier:@"0344df58d3074e11947c2a6d93d5a76a"];
     [[BITHockeyManager sharedHockeyManager] startManager];
     [[BITHockeyManager sharedHockeyManager].authenticator authenticateInstallation];
 #endif
