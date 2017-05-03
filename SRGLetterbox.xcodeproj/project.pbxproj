@@ -1071,7 +1071,7 @@
 				BUNDLE_IDENTIFIER_SUFFIX = .nightly;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Schweizerische Radio- und Fernsehgesellschaft";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CUSTOM_BUNDLE_NAME = "Letterbox 🌙";
+				CUSTOM_BUNDLE_NAME = "LB TC 🌙";
 				DEVELOPMENT_TEAM = VMGRRW6SG7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1104,7 +1104,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BUNDLE_IDENTIFIER_SUFFIX = .debug;
-				CUSTOM_BUNDLE_NAME = "Letterbox 🛠";
+				CUSTOM_BUNDLE_NAME = "LB TC 🛠";
 				DEVELOPMENT_TEAM = VMGRRW6SG7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
