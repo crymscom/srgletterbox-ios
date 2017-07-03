@@ -150,6 +150,8 @@
     
     static NSString * const kInvalidURNString = @"urn:swi:video:1234567";
     
+    static NSString * const kVideoDRMStream1 = @"urn:rts:video:DRM1";
+    
     switch (indexPath.section) {
         case 0: {
             switch (indexPath.row) {
@@ -293,16 +295,21 @@
                 }
                     
                 case 17: {
-                    [self openModalPlayerWithURNString:kInvalidURNString];
+                    [self openModalPlayerWithURNString:kVideoDRMStream1];
                     break;
                 }
                     
                 case 18: {
-                    [self openModalPlayerWithURNString:nil];
+                    [self openModalPlayerWithURNString:kInvalidURNString];
                     break;
                 }
                     
                 case 19: {
+                    [self openModalPlayerWithURNString:nil];
+                    break;
+                }
+                    
+                case 20: {
                     [tableView deselectRowAtIndexPath:indexPath animated:YES];
                     [self openCustomURNEntryAlertWithCompletionBlock:^(NSString * _Nullable URNString) {
                         [self openModalPlayerWithURNString:URNString];

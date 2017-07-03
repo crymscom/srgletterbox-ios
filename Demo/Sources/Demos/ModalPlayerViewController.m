@@ -91,6 +91,15 @@
                                                  name:SRGLetterboxMetadataDidChangeNotification
                                                object:self.letterboxController];
     
+    // DRM-protected stream are currently only available on MMF
+    // TODO: Remove when we don't need MMF anymore.
+    if ([self.URN.uid containsString:@"DRM"]) {
+        self.letterboxController.serviceURL = [NSURL URLWithString:@"https://play-mmf.herokuapp.com"];
+    }
+    else {
+        self.letterboxController.serviceURL = nil;
+    }
+    
     [self.letterboxController playURN:self.URN];
     
     [self reloadData];
