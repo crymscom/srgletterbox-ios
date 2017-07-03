@@ -93,7 +93,7 @@
     
     // DRM-protected stream are currently only available on MMF
     // TODO: Remove when we don't need MMF anymore.
-    if ([self.URN.uid containsString:@"DRM"]) {
+    if ([self.URN.uid.lowercaseString containsString:@"drm"]) {
         self.letterboxController.serviceURL = [NSURL URLWithString:@"https://play-mmf.herokuapp.com"];
     }
     else {

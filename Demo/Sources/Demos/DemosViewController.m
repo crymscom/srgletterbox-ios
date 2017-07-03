@@ -150,7 +150,7 @@
     
     static NSString * const kInvalidURNString = @"urn:swi:video:1234567";
     
-    static NSString * const kVideoDRMStream1 = @"urn:rts:video:DRM1";
+    static NSString * const kVideoDRMStream1 = @"urn:rts:video:_drm17_hls_1";
     
     switch (indexPath.section) {
         case 0: {
