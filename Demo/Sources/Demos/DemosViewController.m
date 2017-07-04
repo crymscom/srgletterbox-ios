@@ -156,6 +156,20 @@
         case 0: {
             switch (indexPath.row) {
                 case 0: {
+                    [self openModalPlayerWithURNString:kVideoDRMStream1];
+                    break;
+                }
+                    
+                default: {
+                    break;
+                }
+            }
+            break;
+        }
+            
+        case 1: {
+            switch (indexPath.row) {
+                case 0: {
                     [self openSimplePlayerWithURNString:kVideoOnDemandURNString];
                     break;
                 }
@@ -180,7 +194,7 @@
             break;
         }
             
-        case 1: {
+        case 2: {
             switch (indexPath.row) {
                 case 0: {
                     [self openStandalonePlayerWithURNString:kVideoOnDemandURNString];
@@ -207,109 +221,104 @@
             break;
         }
             
-        case 2: {
+        case 3: {
             switch (indexPath.row) {
                 case 0: {
-                    [self openModalPlayerWithURNString:kVideoDRMStream1];
-                    break;
-                }
-                    
-                case 1: {
                     [self openModalPlayerWithURNString:kVideoOnDemandURNString];
                     break;
                 }
                     
-                case 2: {
+                case 1: {
                     [self openModalPlayerWithURNString:kVideoOnDemandShortClipURNString];
                     break;
                 }
                     
-                case 3: {
+                case 2: {
                     [self openModalPlayerWithURNString:kVideoOnDemandSegmentsURNString];
                     break;
                 }
                     
-                case 4: {
+                case 3: {
                     [self openModalPlayerWithURNString:kVideoOnDemandStartOnSegmentURNString];
                     break;
                 }
                     
-                case 5: {
+                case 4: {
                     [self openModalPlayerWithURNString:kVideoOnDemandWithNoFullLengthURNString];
                     break;
                 }
                     
-                case 6: {
+                case 5: {
                     [self openModalPlayerWithURNString:kVideoOnDemandBlockedSegmentURNString];
                     break;
                 }
                     
-                case 7: {
+                case 6: {
                     [self openModalPlayerWithURNString:kVideoOnDemandHybridURNString];
                     break;
                 }
                     
-                case 8: {
+                case 7: {
                     [self openModalPlayerWithURNString:kVideoOnDemandNoTokenURNString];
                     break;
                 }
                     
-                case 9: {
+                case 8: {
                     [self openModalPlayerWithURNString:kVideoDVRURNString];
                     break;
                 }
                     
-                case 10: {
+                case 9: {
                     [self openModalPlayerWithURNString:kVideoLiveURNString];
                     break;
                 }
                     
-                case 11: {
+                case 10: {
                     [self openModalPlayerWithURNString:kAudioOnDemandSegmentsURNString];
                     break;
                 }
                     
-                case 12: {
+                case 11: {
                     [self openModalPlayerWithURNString:kAudioOnDemandStartOnSegmentURNString];
                     break;
                 }
                     
-                case 13: {
+                case 12: {
                     [self openModalPlayerWithURNString:kAudioDVRURNString];
                     break;
                 }
                     
-                case 14: {
+                case 13: {
                     [self openModalPlayerWithURNString:kAudioDVRRegionalURNString];
                     break;
                 }
                     
-                case 15: {
+                case 14: {
                     [self openModalPlayerWithLatestLiveCenterVideoForBusinessUnitIdentifier:SRGDataProviderBusinessUnitIdentifierSRF];
                     break;
                 }
                     
-                case 16: {
+                case 15: {
                     [self openModalPlayerWithLatestLiveCenterVideoForBusinessUnitIdentifier:SRGDataProviderBusinessUnitIdentifierRTS];
                     break;
                 }
                     
-                case 17: {
+                case 16: {
                     [self openModalPlayerWithLatestLiveCenterVideoForBusinessUnitIdentifier:SRGDataProviderBusinessUnitIdentifierRSI];
                     break;
                 }
                     
-                case 18: {
+                case 17: {
                     [self openModalPlayerWithURNString:kInvalidURNString];
                     break;
                 }
                     
-                case 19: {
+                case 18: {
                     [self openModalPlayerWithURNString:nil];
                     break;
                 }
                     
-                case 20: {
+                case 19: {
                     [tableView deselectRowAtIndexPath:indexPath animated:YES];
                     [self openCustomURNEntryAlertWithCompletionBlock:^(NSString * _Nullable URNString) {
                         [self openModalPlayerWithURNString:URNString];
@@ -324,7 +333,7 @@
             break;
         }
         
-        case 3: {
+        case 4: {
             switch (indexPath.row) {
                 case 0: {
                     [self openMultiPlayerWithURNString:@"urn:rts:video:3608506" URNString1:@"urn:rts:video:3608517" URNString2:@"urn:rts:video:1967124"];
@@ -348,7 +357,7 @@
             break;
         }
         
-        case 4: {
+        case 5: {
             AutoplayList autoplayList = AutoplayListUnknown;
             switch (indexPath.row) {
                 case 0: {
