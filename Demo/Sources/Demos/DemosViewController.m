@@ -151,12 +151,18 @@
     static NSString * const kInvalidURNString = @"urn:swi:video:1234567";
     
     static NSString * const kVideoDRMStream1 = @"urn:rts:video:_drm17_hls_1";
+    static NSString * const kVideoDRMStream2 = @"urn:rts:video:_drm17_hls_2";
     
     switch (indexPath.section) {
         case 0: {
             switch (indexPath.row) {
                 case 0: {
                     [self openModalPlayerWithURNString:kVideoDRMStream1];
+                    break;
+                }
+                
+                case 1: {
+                    [self openModalPlayerWithURNString:kVideoDRMStream2];
                     break;
                 }
                     
