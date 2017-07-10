@@ -150,19 +150,25 @@
     
     static NSString * const kInvalidURNString = @"urn:swi:video:1234567";
     
-    static NSString * const kVideoDRMStream1 = @"urn:rts:video:_drm17_hls_1";
-    static NSString * const kVideoDRMStream2 = @"urn:rts:video:_drm17_hls_2";
+    static NSString * const kVideoDRMDVRURNString = @"urn:rts:video:_drm17_hls_1";
+    static NSString * const kVideoDRMOnDemandURNString = @"urn:rts:video:_drm17_hls_2";
+    static NSString * const kVideoDRMLiveURNString = @"urn:rts:video:_drm17_hls_3";
     
     switch (indexPath.section) {
         case 0: {
             switch (indexPath.row) {
                 case 0: {
-                    [self openModalPlayerWithURNString:kVideoDRMStream1];
+                    [self openModalPlayerWithURNString:kVideoDRMDVRURNString];
                     break;
                 }
                 
                 case 1: {
-                    [self openModalPlayerWithURNString:kVideoDRMStream2];
+                    [self openModalPlayerWithURNString:kVideoDRMOnDemandURNString];
+                    break;
+                }
+                    
+                case 2: {
+                    [self openModalPlayerWithURNString:kVideoDRMLiveURNString];
                     break;
                 }
                     
