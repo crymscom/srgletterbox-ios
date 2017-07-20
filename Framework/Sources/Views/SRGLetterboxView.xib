@@ -86,7 +86,7 @@
                                     </connections>
                                 </view>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cih-8k-dqC" userLabel="Backward Button">
-                                    <rect key="frame" x="152.5" y="83" width="48" height="72"/>
+                                    <rect key="frame" x="136.5" y="75" width="64" height="88"/>
                                     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <inset key="contentEdgeInsets" minX="8" minY="20" maxX="8" maxY="20"/>
                                     <state key="normal" image="backward-32"/>
@@ -104,7 +104,7 @@
                                     </userDefinedRuntimeAttributes>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Suw-jc-FuV" userLabel="Forward Button">
-                                    <rect key="frame" x="220.5" y="83" width="48" height="72"/>
+                                    <rect key="frame" x="220.5" y="75" width="64" height="88"/>
                                     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <inset key="contentEdgeInsets" minX="8" minY="20" maxX="8" maxY="20"/>
                                     <state key="normal" image="forward-32"/>
@@ -113,7 +113,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KlV-OH-iUB">
-                                    <rect key="frame" x="268.5" y="83" width="48" height="72"/>
+                                    <rect key="frame" x="284.5" y="83" width="48" height="72"/>
                                     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <inset key="contentEdgeInsets" minX="8" minY="20" maxX="8" maxY="20"/>
                                     <state key="normal" image="back_live-32"/>
@@ -372,15 +372,15 @@
     <resources>
         <image name="airplay-22" width="22" height="22"/>
         <image name="back_live-32" width="32" height="32"/>
-        <image name="backward-32" width="32" height="32"/>
+        <image name="backward-32" width="48" height="48"/>
         <image name="cancel_fullscreen-22" width="22" height="22"/>
-        <image name="forward-32" width="32" height="32"/>
+        <image name="forward-32" width="48" height="48"/>
         <image name="fullscreen-22" width="22" height="22"/>
         <image name="notification-16" width="16" height="16"/>
         <image name="pause-32" width="32" height="32"/>
         <image name="picture_in_picture_start-22" width="22" height="22"/>
         <image name="picture_in_picture_stop-22" width="22" height="22"/>
-        <image name="play-32" width="32" height="32"/>
+        <image name="play-32" width="48" height="48"/>
         <image name="subtitles_off-22" width="26" height="22"/>
         <image name="subtitles_on-22" width="26" height="22"/>
     </resources>
