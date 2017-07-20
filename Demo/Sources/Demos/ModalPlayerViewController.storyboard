@@ -51,10 +51,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ePn-4e-JbK" userLabel="Close Button">
-                                <rect key="frame" x="0.0" y="20" width="40" height="40"/>
+                                <rect key="frame" x="0.0" y="20" width="48" height="48"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="Obs-Ak-Xh3"/>
-                                    <constraint firstAttribute="width" constant="40" id="w9t-5v-a6u"/>
+                                    <constraint firstAttribute="height" constant="48" id="Obs-Ak-Xh3"/>
+                                    <constraint firstAttribute="width" constant="48" id="w9t-5v-a6u"/>
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" image="close_22"/>
@@ -180,6 +180,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="close_22" width="22" height="22"/>
+        <image name="close_22" width="48" height="48"/>
     </resources>
 </document>

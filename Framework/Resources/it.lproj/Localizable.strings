@@ -2,7 +2,7 @@
 "A network issue has been encountered. Please check your Internet connection and network settings" = "È stato rilevato un problema di rete. Si prega di controllare le impostazioni di rete e la connessione Internet";
 
 /* Very short text in the slider bubble, or in the bottom right corner of the Letterbox view when playing a live stream or a timeshift stream in live */
-"Live" = "Live";
+"Live" = "LIVE";
 
 /* Text displayed when no media is available for playback */
 "No media" = "Nessun media";
