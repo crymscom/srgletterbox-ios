@@ -147,20 +147,34 @@
                                                 <userDefinedRuntimeAttribute type="image" keyPath="stopImage" value="picture_in_picture_stop-48"/>
                                             </userDefinedRuntimeAttributes>
                                         </view>
-                                        <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="TJI-j4-mRH" customClass="SRGASValueTrackingSlider">
-                                            <rect key="frame" x="98" y="0.0" width="181" height="49"/>
-                                            <color key="minimumTrackTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <color key="maximumTrackTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                            <userDefinedRuntimeAttributes>
-                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                    <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                </userDefinedRuntimeAttribute>
-                                            </userDefinedRuntimeAttributes>
-                                            <connections>
-                                                <outlet property="delegate" destination="-1" id="zYe-Lt-gTx"/>
-                                                <outlet property="timeLeftValueLabel" destination="5WU-3U-ZqK" id="QHc-ru-oQ3"/>
-                                            </connections>
-                                        </slider>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ctC-NF-9xW">
+                                            <rect key="frame" x="100" y="0.0" width="177" height="48"/>
+                                            <subviews>
+                                                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="TJI-j4-mRH" customClass="SRGASValueTrackingSlider">
+                                                    <rect key="frame" x="-2" y="13" width="181" height="23"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="22" id="l6R-tw-2uY"/>
+                                                    </constraints>
+                                                    <color key="minimumTrackTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="maximumTrackTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                            <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="-1" id="zYe-Lt-gTx"/>
+                                                        <outlet property="timeLeftValueLabel" destination="5WU-3U-ZqK" id="QHc-ru-oQ3"/>
+                                                    </connections>
+                                                </slider>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstItem="TJI-j4-mRH" firstAttribute="centerY" secondItem="ctC-NF-9xW" secondAttribute="centerY" id="5sk-tv-FgO"/>
+                                                <constraint firstItem="TJI-j4-mRH" firstAttribute="leading" secondItem="ctC-NF-9xW" secondAttribute="leading" id="XuQ-Ha-F2n"/>
+                                                <constraint firstAttribute="trailing" secondItem="TJI-j4-mRH" secondAttribute="trailing" id="zxw-oX-B8m"/>
+                                            </constraints>
+                                        </view>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="--:--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5WU-3U-ZqK" userLabel="Remaining Time Label">
                                             <rect key="frame" x="279" y="0.0" width="26" height="48"/>
                                             <fontDescription key="fontDescription" name="SRGSSRType-Regular" family="SRG SSR Type" pointSize="14"/>
