@@ -65,9 +65,6 @@
                                         </constraints>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <state key="normal" image="downloading9_48"/>
-                                        <connections>
-                                            <action selector="close:" destination="FcC-Qn-oGg" eventType="touchUpInside" id="EaZ-TZ-KKL"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aS6-hX-Gn2" userLabel="Favorite Button">
                                         <rect key="frame" x="279" y="0.0" width="48" height="48"/>
@@ -77,9 +74,8 @@
                                         </constraints>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <state key="normal" image="favorite_48"/>
-                                        <connections>
-                                            <action selector="close:" destination="FcC-Qn-oGg" eventType="touchUpInside" id="Wa9-37-BVP"/>
-                                        </connections>
+                                        <state key="selected" image="favorite_full_48"/>
+                                        <state key="highlighted" image="favorite_full_48"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="69k-z9-ZKk" userLabel="Share Button">
                                         <rect key="frame" x="327" y="0.0" width="48" height="48"/>
@@ -89,9 +85,6 @@
                                         </constraints>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <state key="normal" image="share_48"/>
-                                        <connections>
-                                            <action selector="close:" destination="FcC-Qn-oGg" eventType="touchUpInside" id="gy5-CT-khZ"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -229,6 +222,7 @@
         <image name="close_48" width="48" height="48"/>
         <image name="downloading9_48" width="48" height="48"/>
         <image name="favorite_48" width="48" height="48"/>
+        <image name="favorite_full_48" width="48" height="48"/>
         <image name="share_48" width="48" height="48"/>
     </resources>
 </document>
