@@ -79,7 +79,7 @@
                             <rect key="frame" x="27" y="0.0" width="421" height="237"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d5q-RH-Wvg" userLabel="User Interface Toggle Active View">
-                                    <rect key="frame" x="0.0" y="0.0" width="421" height="205"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="421" height="179"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     <connections>
                                         <outletCollection property="gestureRecognizers" destination="cSD-No-gUM" appends="YES" id="Llk-zp-Ezc"/>
@@ -121,34 +121,34 @@
                                         <action selector="seekToLive:" destination="-1" eventType="touchUpInside" id="DY5-NU-cqh"/>
                                     </connections>
                                 </button>
-                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="tuV-Cd-a2U">
-                                    <rect key="frame" x="8" y="205" width="405" height="22"/>
+                                <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="tuV-Cd-a2U">
+                                    <rect key="frame" x="8" y="179" width="405" height="48"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CRu-wz-mvo" customClass="SRGAirplayButton">
-                                            <rect key="frame" x="0.0" y="0.0" width="28" height="22"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" priority="999" constant="28" id="krz-KZ-6xI"/>
+                                                <constraint firstAttribute="width" constant="48" id="krz-KZ-6xI"/>
                                             </constraints>
                                             <userDefinedRuntimeAttributes>
-                                                <userDefinedRuntimeAttribute type="image" keyPath="image" value="airplay-22"/>
+                                                <userDefinedRuntimeAttribute type="image" keyPath="image" value="fullscreen-48"/>
                                             </userDefinedRuntimeAttributes>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="83c-T2-D7p" customClass="SRGPictureInPictureButton">
-                                            <rect key="frame" x="36" y="0.0" width="28" height="22"/>
+                                            <rect key="frame" x="50" y="0.0" width="48" height="48"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" priority="999" constant="28" id="zmZ-kO-dQd"/>
+                                                <constraint firstAttribute="width" priority="999" constant="48" id="zmZ-kO-dQd"/>
                                             </constraints>
                                             <userDefinedRuntimeAttributes>
-                                                <userDefinedRuntimeAttribute type="image" keyPath="startImage" value="picture_in_picture_start-22"/>
-                                                <userDefinedRuntimeAttribute type="image" keyPath="stopImage" value="picture_in_picture_stop-22"/>
+                                                <userDefinedRuntimeAttribute type="image" keyPath="startImage" value="picture_in_picture_start-48"/>
+                                                <userDefinedRuntimeAttribute type="image" keyPath="stopImage" value="picture_in_picture_stop-48"/>
                                             </userDefinedRuntimeAttributes>
                                         </view>
                                         <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="TJI-j4-mRH" customClass="SRGASValueTrackingSlider">
-                                            <rect key="frame" x="70" y="0.0" width="231" height="23"/>
+                                            <rect key="frame" x="98" y="0.0" width="181" height="49"/>
                                             <color key="minimumTrackTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="maximumTrackTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <userDefinedRuntimeAttributes>
@@ -162,31 +162,31 @@
                                             </connections>
                                         </slider>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="--:--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5WU-3U-ZqK" userLabel="Remaining Time Label">
-                                            <rect key="frame" x="307" y="0.0" width="26" height="22"/>
+                                            <rect key="frame" x="279" y="0.0" width="26" height="48"/>
                                             <fontDescription key="fontDescription" name="SRGSSRType-Regular" family="SRG SSR Type" pointSize="14"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iRM-He-GD6" customClass="SRGTracksButton">
-                                            <rect key="frame" x="341" y="0.0" width="28" height="22"/>
+                                            <rect key="frame" x="307" y="0.0" width="48" height="48"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" priority="999" constant="28" id="Ikp-BO-xhZ"/>
+                                                <constraint firstAttribute="width" priority="999" constant="48" id="Ikp-BO-xhZ"/>
                                             </constraints>
                                             <userDefinedRuntimeAttributes>
-                                                <userDefinedRuntimeAttribute type="image" keyPath="image" value="subtitles_off-22"/>
-                                                <userDefinedRuntimeAttribute type="image" keyPath="selectedImage" value="subtitles_on-22"/>
+                                                <userDefinedRuntimeAttribute type="image" keyPath="image" value="subtitles_off-48"/>
+                                                <userDefinedRuntimeAttribute type="image" keyPath="selectedImage" value="subtitles_on-48"/>
                                             </userDefinedRuntimeAttributes>
                                         </view>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WT7-v6-7uh" userLabel="Full Screen Button" customClass="SRGFullScreenButton">
-                                            <rect key="frame" x="377" y="0.0" width="28" height="22"/>
+                                            <rect key="frame" x="357" y="0.0" width="48" height="48"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" priority="999" constant="28" id="wp2-4M-YHh"/>
+                                                <constraint firstAttribute="width" priority="999" constant="48" id="wp2-4M-YHh"/>
                                             </constraints>
                                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <state key="normal" image="fullscreen-22"/>
+                                            <state key="normal" image="fullscreen-48"/>
                                             <state key="selected" image="cancel_fullscreen-22"/>
                                             <connections>
                                                 <action selector="toggleFullScreen:" destination="-1" eventType="touchUpInside" id="MAw-kb-OhI"/>
@@ -194,7 +194,7 @@
                                         </button>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="height" constant="22" id="0jf-HD-Oah"/>
+                                        <constraint firstAttribute="height" constant="48" id="0jf-HD-Oah"/>
                                     </constraints>
                                 </stackView>
                             </subviews>
@@ -286,13 +286,13 @@
                     <rect key="frame" x="0.0" y="0.0" width="474" height="255"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ess-8e-PUx" userLabel="Full Screen Button" customClass="SRGFullScreenButton">
-                            <rect key="frame" x="412" y="205" width="28" height="22"/>
+                            <rect key="frame" x="392" y="179" width="48" height="48"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <constraints>
-                                <constraint firstAttribute="width" priority="999" constant="28" id="HBf-Xn-XW4"/>
+                                <constraint firstAttribute="width" priority="999" constant="48" id="HBf-Xn-XW4"/>
                             </constraints>
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            <state key="normal" image="fullscreen-22"/>
+                            <state key="normal" image="fullscreen-48"/>
                             <state key="selected" image="cancel_fullscreen-22"/>
                             <connections>
                                 <action selector="toggleFullScreen:" destination="-1" eventType="touchUpInside" id="vDC-gY-Ev3"/>
@@ -370,18 +370,17 @@
         </tapGestureRecognizer>
     </objects>
     <resources>
-        <image name="airplay-22" width="22" height="22"/>
         <image name="back_live-32" width="32" height="32"/>
         <image name="backward-32" width="48" height="48"/>
         <image name="cancel_fullscreen-22" width="22" height="22"/>
         <image name="forward-32" width="48" height="48"/>
-        <image name="fullscreen-22" width="22" height="22"/>
+        <image name="fullscreen-48" width="48" height="48"/>
         <image name="notification-16" width="16" height="16"/>
         <image name="pause-32" width="32" height="32"/>
-        <image name="picture_in_picture_start-22" width="22" height="22"/>
-        <image name="picture_in_picture_stop-22" width="22" height="22"/>
+        <image name="picture_in_picture_start-48" width="48" height="48"/>
+        <image name="picture_in_picture_stop-48" width="48" height="48"/>
         <image name="play-32" width="48" height="48"/>
-        <image name="subtitles_off-22" width="26" height="22"/>
-        <image name="subtitles_on-22" width="26" height="22"/>
+        <image name="subtitles_off-48" width="48" height="48"/>
+        <image name="subtitles_on-48" width="48" height="48"/>
     </resources>
 </document>
