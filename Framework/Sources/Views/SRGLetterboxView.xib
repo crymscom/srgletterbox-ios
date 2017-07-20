@@ -77,7 +77,7 @@
                             <rect key="frame" x="27" y="0.0" width="421" height="237"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d5q-RH-Wvg" userLabel="User Interface Toggle Active View">
-                                    <rect key="frame" x="0.0" y="0.0" width="421" height="179"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="421" height="189"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     <connections>
                                         <outletCollection property="gestureRecognizers" destination="cSD-No-gUM" appends="YES" id="Llk-zp-Ezc"/>
@@ -120,7 +120,7 @@
                                     </connections>
                                 </button>
                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="tuV-Cd-a2U">
-                                    <rect key="frame" x="8" y="179" width="405" height="48"/>
+                                    <rect key="frame" x="8" y="189" width="405" height="48"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IRp-Nl-MKM" userLabel="Full Screen Button" customClass="SRGFullScreenButton">
                                             <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
@@ -181,7 +181,7 @@
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vqb-K1-1Sl" userLabel="Full Screen Button" customClass="SRGFullScreenButton">
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vqb-K1-1Sl" userLabel="Subtitles Button" customClass="SRGFullScreenButton">
                                             <rect key="frame" x="307" y="0.0" width="48" height="48"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <constraints>
@@ -189,10 +189,7 @@
                                             </constraints>
                                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <state key="normal" image="subtitles_off-48"/>
-                                            <state key="selected" image="cancel_fullscreen-22"/>
-                                            <connections>
-                                                <action selector="toggleFullScreen:" destination="-1" eventType="touchUpInside" id="6GO-i2-CBO"/>
-                                            </connections>
+                                            <state key="highlighted" image="subtitles_on-48"/>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WT7-v6-7uh" userLabel="Full Screen Button" customClass="SRGFullScreenButton">
                                             <rect key="frame" x="357" y="0.0" width="48" height="48"/>
@@ -202,7 +199,7 @@
                                             </constraints>
                                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <state key="normal" image="fullscreen-48"/>
-                                            <state key="selected" image="cancel_fullscreen-22"/>
+                                            <state key="selected" image="cancel_fullscreen-48"/>
                                             <connections>
                                                 <action selector="toggleFullScreen:" destination="-1" eventType="touchUpInside" id="MAw-kb-OhI"/>
                                             </connections>
@@ -217,7 +214,7 @@
                             <gestureRecognizers/>
                             <constraints>
                                 <constraint firstItem="yE6-Vv-zcn" firstAttribute="leading" secondItem="cih-8k-dqC" secondAttribute="trailing" id="1MA-ls-Rsr"/>
-                                <constraint firstAttribute="bottom" secondItem="tuV-Cd-a2U" secondAttribute="bottom" constant="10" id="1df-li-DMF"/>
+                                <constraint firstAttribute="bottom" secondItem="tuV-Cd-a2U" secondAttribute="bottom" id="1df-li-DMF"/>
                                 <constraint firstAttribute="trailing" secondItem="d5q-RH-Wvg" secondAttribute="trailing" id="40U-6f-Z7v"/>
                                 <constraint firstItem="d5q-RH-Wvg" firstAttribute="leading" secondItem="mae-cR-Ydf" secondAttribute="leading" id="CNS-6S-nVb"/>
                                 <constraint firstItem="Suw-jc-FuV" firstAttribute="centerY" secondItem="yE6-Vv-zcn" secondAttribute="centerY" id="DdS-Ik-n8V"/>
@@ -301,14 +298,14 @@
                     <rect key="frame" x="0.0" y="0.0" width="474" height="255"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ess-8e-PUx" userLabel="Full Screen Button" customClass="SRGFullScreenButton">
-                            <rect key="frame" x="392" y="179" width="48" height="48"/>
+                            <rect key="frame" x="392" y="189" width="48" height="48"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstAttribute="width" priority="999" constant="48" id="HBf-Xn-XW4"/>
                             </constraints>
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <state key="normal" image="fullscreen-48"/>
-                            <state key="selected" image="cancel_fullscreen-22"/>
+                            <state key="selected" image="cancel_fullscreen-48"/>
                             <connections>
                                 <action selector="toggleFullScreen:" destination="-1" eventType="touchUpInside" id="vDC-gY-Ev3"/>
                             </connections>
@@ -389,6 +386,7 @@
         <image name="back_live-32" width="32" height="32"/>
         <image name="backward-32" width="48" height="48"/>
         <image name="cancel_fullscreen-22" width="22" height="22"/>
+        <image name="cancel_fullscreen-48" width="48" height="48"/>
         <image name="forward-32" width="48" height="48"/>
         <image name="fullscreen-48" width="48" height="48"/>
         <image name="notification-16" width="16" height="16"/>
@@ -397,5 +395,6 @@
         <image name="picture_in_picture_stop-48" width="48" height="48"/>
         <image name="play-32" width="48" height="48"/>
         <image name="subtitles_off-48" width="48" height="48"/>
+        <image name="subtitles_on-48" width="48" height="48"/>
     </resources>
 </document>
