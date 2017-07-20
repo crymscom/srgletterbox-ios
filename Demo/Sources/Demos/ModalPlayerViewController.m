@@ -20,7 +20,7 @@
 
 @property (nonatomic) IBOutlet SRGLetterboxController *letterboxController;     // top-level object, retained
 @property (nonatomic, weak) IBOutlet SRGLetterboxView *letterboxView;
-@property (nonatomic, weak) IBOutlet UIButton *closeButton;
+@property (nonatomic, weak) IBOutlet UIStackView *topStackView;
 
 @property (nonatomic, weak) IBOutlet UILabel *titleLabel;
 @property (nonatomic, weak) IBOutlet UILabel *nowLabel;
@@ -72,8 +72,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    self.closeButton.accessibilityLabel = SRGLetterboxDemoAccessibilityLocalizedString(@"Close", @"Close button label");
     
     // Use custom modal transition
     self.transitioningDelegate = self;
@@ -185,7 +183,7 @@
     [self.view layoutIfNeeded];
     [letterboxView animateAlongsideUserInterfaceWithAnimations:^(BOOL hidden, CGFloat heightOffset) {
         self.letterboxAspectRatioConstraint.constant = heightOffset;
-        self.closeButton.alpha = (hidden && ! self.letterboxController.error && self.letterboxController.URN) ? 0.f : 1.f;
+        self.topStackView.alpha = (hidden && ! self.letterboxController.error && self.letterboxController.URN) ? 0.f : 1.f;
         [self.view layoutIfNeeded];
     } completion:nil];
 }
