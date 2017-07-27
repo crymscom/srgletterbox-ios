@@ -52,6 +52,8 @@
     versionString = [@"🛠 " stringByAppendingString:versionString];
 #elif NIGHTLY
     versionString = [@"🌙 " stringByAppendingString:versionString];
+#else
+    versionString = [@"🔒 " stringByAppendingString:versionString];
 #endif
     
     return [NSString stringWithFormat:@"Letterbox %@ (build %@)", versionString, bundleVersion];
