@@ -24,9 +24,9 @@
 #ifndef DEBUG
     
 #ifdef NIGHTLY
-    NSString *hockeyIdentifier = @"fed0d464bba34c35bbb051f9f517a9d6";
+    NSString *hockeyIdentifier = @"";
 #else
-    NSString *hockeyIdentifier = @"7bf489539f6e44739133ae456c41dc2c";
+    NSString *hockeyIdentifier = @"13cd3fae0acd46138c2e2bbf20d016c2";
 #endif
     
     [[BITHockeyManager sharedHockeyManager] configureWithIdentifier:hockeyIdentifier];
