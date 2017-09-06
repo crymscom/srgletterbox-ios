@@ -178,6 +178,20 @@
         case 0: {
             switch (indexPath.row) {
                 case 0: {
+                    [self openMediaListWithType:MediaListMMF_DRM_POC];
+                    break;
+                }
+                    
+                default: {
+                    break;
+                }
+            }
+            break;
+        }
+            
+        case 1: {
+            switch (indexPath.row) {
+                case 0: {
                     [self openSimplePlayerWithURNString:kVideoOnDemandURNString];
                     break;
                 }
@@ -202,7 +216,7 @@
             break;
         }
             
-        case 1: {
+        case 2: {
             switch (indexPath.row) {
                 case 0: {
                     [self openStandalonePlayerWithURNString:kVideoOnDemandURNString];
@@ -229,7 +243,7 @@
             break;
         }
             
-        case 2: {
+        case 3: {
             switch (indexPath.row) {
                 case 0: {
                     [self openModalPlayerWithURNString:kVideoOnDemandURNString chaptersOnly:NO];
@@ -359,7 +373,7 @@
             break;
         }
             
-        case 3: {
+        case 4: {
             switch (indexPath.row) {
                 case 0: {
                     [self openModalPlayerWithURNString:kVideoOnDemandChaptersOnlyFullLengthURNString chaptersOnly:YES];
@@ -386,7 +400,7 @@
             break;
         }
         
-        case 4: {
+        case 5: {
             switch (indexPath.row) {
                 case 0: {
                     [self openMultiPlayerWithURNString:@"urn:rts:video:3608506" URNString1:@"urn:rts:video:3608517" URNString2:@"urn:rts:video:1967124"];
@@ -410,7 +424,7 @@
             break;
         }
         
-        case 5: {
+        case 6: {
             AutoplayList autoplayList = AutoplayListUnknown;
             switch (indexPath.row) {
                 case 0: {

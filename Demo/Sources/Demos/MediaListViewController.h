@@ -29,7 +29,11 @@ typedef NS_ENUM(NSInteger, MediaListType) {
     /**
      *  Livecenter RSI
      */
-    MediaListLivecenterRSI
+    MediaListLivecenterRSI,
+    /**
+     *  MMF DRM POC
+     */
+    MediaListMMF_DRM_POC
 };
 
 @interface MediaListViewController : UITableViewController

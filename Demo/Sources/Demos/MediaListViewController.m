@@ -54,12 +54,14 @@
     dispatch_once(&s_onceToken, ^{
         s_businessUnitIdentifiers = @{ @(MediaListLivecenterSRF) : SRGDataProviderBusinessUnitIdentifierSRF,
                                        @(MediaListLivecenterRTS) : SRGDataProviderBusinessUnitIdentifierRTS,
-                                       @(MediaListLivecenterRSI) : SRGDataProviderBusinessUnitIdentifierRSI };
+                                       @(MediaListLivecenterRSI) : SRGDataProviderBusinessUnitIdentifierRSI,
+                                       @(MediaListMMF_DRM_POC) : SRGDataProviderBusinessUnitIdentifierRTS};
     });
     
     SRGDataProviderBusinessUnitIdentifier businessUnitIdentifier = s_businessUnitIdentifiers[@(self.mediaListType)];
     NSAssert(businessUnitIdentifier != nil, @"The business unit must be supported");
-    self.dataProvider = [[SRGDataProvider alloc] initWithServiceURL:ApplicationSettingServiceURL() businessUnitIdentifier:businessUnitIdentifier];
+    NSURL *serviceURL = (self.mediaListType == MediaListMMF_DRM_POC) ? [NSURL URLWithString:@"https://play-mmf.herokuapp.com"] : ApplicationSettingServiceURL();
+    self.dataProvider = [[SRGDataProvider alloc] initWithServiceURL:serviceURL businessUnitIdentifier:businessUnitIdentifier];
     
     UIRefreshControl *refreshControl = [[UIRefreshControl alloc] init];
     [refreshControl addTarget:self action:@selector(refresh:) forControlEvents:UIControlEventValueChanged];
@@ -87,7 +89,8 @@
     dispatch_once(&s_onceToken, ^{
         s_titles = @{ @(MediaListLivecenterSRF) : LetterboxDemoNonLocalizedString(@"SRF Live center"),
                       @(MediaListLivecenterRTS) : LetterboxDemoNonLocalizedString(@"RTS Live center"),
-                      @(MediaListLivecenterRSI) : LetterboxDemoNonLocalizedString(@"RSI Live center") };
+                      @(MediaListLivecenterRSI) : LetterboxDemoNonLocalizedString(@"RSI Live center"),
+                      @(MediaListMMF_DRM_POC) : LetterboxDemoNonLocalizedString(@"DRM POC List") };
     });
     return s_titles[@(self.mediaListType)] ?: LetterboxDemoNonLocalizedString(@"Unknown");
 }
@@ -98,14 +101,33 @@
 {
     [self.request cancel];
     
-    SRGRequest *request =  [self.dataProvider liveCenterVideosWithCompletionBlock:^(NSArray<SRGMedia *> * _Nullable medias, SRGPage * _Nonnull page, SRGPage * _Nullable nextPage, NSError * _Nullable error) {
+    SRGPaginatedMediaListCompletionBlock completionBlock = ^(NSArray<SRGMedia *> * _Nullable medias, SRGPage * _Nonnull page, SRGPage * _Nullable nextPage, NSError * _Nullable error) {
         if (self.refreshControl.refreshing) {
             [self.refreshControl endRefreshing];
         }
         
-        self.medias = medias;
+        if (self.mediaListType == MediaListMMF_DRM_POC) {
+            // For DRM POC and media list on MMF, filter with no delay medias and only hls streams
+            NSPredicate *predicate = [NSPredicate predicateWithBlock:^BOOL(SRGMedia *  _Nullable media, NSDictionary<NSString *,id> * _Nullable bindings) {
+                SRGMediaURN *URN = media.URN;
+                return [URN.uid containsString:@"hls"] && ![URN.uid containsString:@"_delay"];
+            }];
+            self.medias = [medias filteredArrayUsingPredicate:predicate];
+        }
+        else {
+            self.medias = medias;
+        }
         [self.tableView reloadData];
-    }];
+    };
+    
+    SRGRequest *request = nil;
+    if (self.mediaListType == MediaListMMF_DRM_POC) {
+        request = [self.dataProvider tvLatestMediasForTopicWithUid:@"drm-poc" completionBlock:completionBlock];
+    }
+    else {
+        request =  [self.dataProvider liveCenterVideosWithCompletionBlock:completionBlock];
+    }
+    
     [request resume];
     self.request = request;
 }
@@ -132,7 +154,8 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     SRGMediaURN *URN = [SRGMediaURN mediaURNWithString:self.medias[indexPath.row].URN.URNString];
-    ModalPlayerViewController *playerViewController = [[ModalPlayerViewController alloc] initWithURN:URN chaptersOnly:NO serviceURL:nil];
+    NSURL *serviceURL = (self.mediaListType == MediaListMMF_DRM_POC) ? [NSURL URLWithString:@"https://play-mmf.herokuapp.com"] : nil;
+    ModalPlayerViewController *playerViewController = [[ModalPlayerViewController alloc] initWithURN:URN chaptersOnly:NO serviceURL:serviceURL];
     
     // Since might be reused, ensure we are not trying to present the same view controller while still dismissed
     // (might happen if presenting and dismissing fast)
