@@ -13,6 +13,7 @@
 #import "SRGFullScreenButton.h"
 #import "SRGLetterboxController+Private.h"
 #import "SRGLetterboxError.h"
+#import "SRGLetterboxLabel.h"
 #import "SRGLetterboxLogger.h"
 #import "SRGLetterboxPlaybackButton.h"
 #import "SRGLetterboxService+Private.h"
@@ -171,6 +172,9 @@ static void commonInit(SRGLetterboxView *self);
     self.timeSlider.popUpViewArrowLength = 4.f;
     self.timeSlider.dataSource = self;
     self.timeSlider.delegate = self;
+    
+    SRGLetterboxLabel *letterboxLabel = (SRGLetterboxLabel *)self.timeSlider.timeLeftValueLabel;
+    letterboxLabel.edgeInsets = UIEdgeInsetsMake(0.f, 0.f, 0.f, 15.f);
     
     self.timelineHeightConstraint.constant = 0.f;
     
@@ -1201,6 +1205,8 @@ static void commonInit(SRGLetterboxView *self);
 
 - (NSAttributedString *)slider:(SRGASValueTrackingSlider *)slider attributedStringForValue:(float)value;
 {
+    UIColor *grayColor = [UIColor colorWithRed:35./255. green:35./255. blue:35./255. alpha:1.f];
+    
     if (self.controller.media.contentType == SRGContentTypeLivestream || self.controller.media.contentType == SRGContentTypeScheduledLivestream) {
         static dispatch_once_t onceToken;
         static NSDateFormatter *dateFormatter;
@@ -1211,19 +1217,19 @@ static void commonInit(SRGLetterboxView *self);
         });
         
         if (self.timeSlider.live) {
-            return [[NSAttributedString alloc] initWithString:SRGLetterboxLocalizedString(@"Live", @"Very short text in the slider bubble, or in the bottom right corner of the Letterbox view when playing a live stream or a timeshift stream in live") attributes:@{ NSFontAttributeName : [UIFont srg_mediumFontWithTextStyle:SRGAppearanceFontTextStyleSubtitle] }];
+            return [[NSAttributedString alloc] initWithString:SRGLetterboxLocalizedString(@"Live", @"Very short text in the slider bubble, or in the bottom right corner of the Letterbox view when playing a live stream or a timeshift stream in live") attributes:@{ NSFontAttributeName : [UIFont srg_mediumFontWithTextStyle:SRGAppearanceFontTextStyleSubtitle], NSForegroundColorAttributeName : grayColor }];
         }
         else {
-            NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:SRGLetterboxNonLocalizedString(@"  ") attributes:@{ NSFontAttributeName : [UIFont srg_awesomeFontWithTextStyle:SRGAppearanceFontTextStyleSubtitle] }];
+            NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:SRGLetterboxNonLocalizedString(@" ") attributes:@{ NSFontAttributeName : [UIFont srg_awesomeFontWithTextStyle:SRGAppearanceFontTextStyleSubtitle], NSForegroundColorAttributeName : grayColor }];
             
             NSString *string =  [dateFormatter stringFromDate:[NSDate dateWithTimeIntervalSinceNow:self.timeSlider.value - self.timeSlider.maximumValue]];
-            [attributedString appendAttributedString:[[NSAttributedString alloc] initWithString:string attributes:@{ NSFontAttributeName : [UIFont srg_mediumFontWithTextStyle:SRGAppearanceFontTextStyleSubtitle] }]];
+            [attributedString appendAttributedString:[[NSAttributedString alloc] initWithString:string attributes:@{ NSFontAttributeName : [UIFont srg_mediumFontWithTextStyle:SRGAppearanceFontTextStyleSubtitle], NSForegroundColorAttributeName : grayColor }]];
             
             return [attributedString copy];
         }
     }
     else {
-        return [[NSAttributedString alloc] initWithString:self.timeSlider.valueString ?: SRGLetterboxNonLocalizedString(@"--:--") attributes:@{ NSFontAttributeName : [UIFont srg_mediumFontWithTextStyle:SRGAppearanceFontTextStyleSubtitle] }];
+        return [[NSAttributedString alloc] initWithString:self.timeSlider.valueString ?: SRGLetterboxNonLocalizedString(@"--:--") attributes:@{ NSFontAttributeName : [UIFont srg_mediumFontWithTextStyle:SRGAppearanceFontTextStyleSubtitle], NSForegroundColorAttributeName : grayColor }];
     }
 }
 
