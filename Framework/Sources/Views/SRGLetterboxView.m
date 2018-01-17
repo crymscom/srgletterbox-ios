@@ -167,7 +167,7 @@ static void commonInit(SRGLetterboxView *self);
     self.timeSlider.popUpViewColor = UIColor.whiteColor;
     self.timeSlider.textColor = UIColor.blackColor;
     self.timeSlider.popUpViewWidthPaddingFactor = 1.2f;
-    self.timeSlider.popUpViewHeightPaddingFactor = 1.f;
+    self.timeSlider.popUpViewHeightPaddingFactor = 1.4f;
     self.timeSlider.popUpViewCornerRadius = 1.f;
     self.timeSlider.popUpViewArrowLength = 4.f;
     self.timeSlider.dataSource = self;
